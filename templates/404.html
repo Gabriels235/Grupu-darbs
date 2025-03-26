@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Lapa nav atrasta{% endblock %}
+{% block content %}
+    <section class="error-section">
+        <h1 class="page-title">404 - Lapa nav atrasta</h1>
+        <p>Atvainojiet, bet lapa, kuru meklējāt, nav pieejama.</p>
+        <div class="error-actions">
+            <a href="{{ url_for('home') }}" class="btn btn-primary">Atgriezties uz sākumlapu</a>
+            <a href="{{ url_for('recipes') }}" class="btn btn-secondary">Apskatīt receptes</a>
+        </div>
+    </section>
+
+    <style>
+        .error-section {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .error-section p {
+            margin: 1rem 0;
+            color: #666;
+        }
+
+        .error-actions {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-secondary {
+            background-color: #666;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #555;
+        }
+    </style>
+{% endblock %}

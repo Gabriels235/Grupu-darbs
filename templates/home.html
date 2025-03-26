@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block title %}Sākums - Receptes{% endblock %}
+{% block content %}
+    <!-- Main heading -->
+    <h1 class="page-title">Laipni lūdzam mūsu recepšu kolekcijā!</h1>
+
+    <!-- Featured Recipe Section -->
+    <section class="featured-recipe" aria-labelledby="featured-title">
+        <h2 class="featured-title" id="featured-title">Ieteiktā recepte</h2>
+        {% if recipe %}
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <div class="recipe-details">
+                    <h3 class="recipe-title" itemprop="name">{{ recipe['Nosaukums'] }}</h3>
+                    <div class="recipe-meta">
+                        <p><strong>Sagatavošanas laiks:</strong> <time itemprop="prepTime" datetime="PT30M">30 minūtes</time></p>
+                        <p><strong>Porciju skaits:</strong> <span itemprop="recipeYield">4</span></p>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="ingredients-section">
+                            <h4>Sastāvdaļas:</h4>
+                            <p itemprop="recipeIngredient">{{ recipe['Sastāvdaļas'] }}</p>
+                        </div>
+                        <div class="preparation-section">
+                            <h4>Pagatavošana:</h4>
+                            <p itemprop="recipeInstructions">{{ recipe['Pagatavošana'] }}</p>
+                        </div>
+                    </div>
+                    <meta itemprop="datePublished" content="2025-03-25">
+                    <meta itemprop="description" content="A delicious recipe for {{ recipe['Nosaukums'] }}.">
+                </div>
+            </article>
+        {% else %}
+            <p>Pašlaik nav ieteiktās receptes.</p>
+        {% endif %}
+    </section>
+
+    <!-- Popular Ingredients Chart -->
+    <section class="chart-container" aria-labelledby="chart-title">
+        <h3 id="chart-title">Populārākās sastāvdaļas</h3>
+        <img 
+            src="/static/ingredients_chart.png" 
+            alt="Grafiks, kas parāda populārākās sastāvdaļas receptēs" 
+            class="chart-image" 
+            loading="lazy"
+        >
+    </section>
+
+    <!-- Recent Recipes Section -->
+    <section class="recent-recipes" aria-labelledby="recent-recipes-title">
+        <h2 class="section-title" id="recent-recipes-title">Jaunākās receptes</h2>
+        {% if recipes %}
+            <div class="recipe-grid">
+                {% for recipe in recipes[:3] %}
+                    <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                        <img 
+                            src="/static/recipes/{{ recipe['Nosaukums']|lower|replace(' ', '-') }}.jpg" 
+                            alt="Attēls no {{ recipe['Nosaukums'] }}" 
+                            class="recipe-image"
+                            loading="lazy"
+                            onerror="this.src='/static/placeholder.jpg'"
+                            itemprop="image"
+                        >
+                        <div class="recipe-details">
+                            <h3 class="recipe-title" itemprop="name">{{ recipe['Nosaukums'] }}</h3>
+                            <p class="recipe-ingredients" itemprop="recipeIngredient">{{ recipe['Sastāvdaļas'] }}</p>
+                            <a 
+                                href="/recipe/{{ recipe['Nosaukums']|lower|replace(' ', '-') }}" 
+                                class="btn-view" 
+                                itemprop="url"
+                            >Skatīt recepti</a>
+                            <meta itemprop="description" content="A recipe for {{ recipe['Nosaukums'] }}.">
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div class="view-all">
+                <a href="/recipes" class="btn-view-all">Skatīt visas receptes</a>
+            </div>
+        {% else %}
+            <p>Pašlaik nav pieejamu recepšu.</p>
+        {% endif %}
+    </section>
+
+    <style>
+        /* Featured Recipe Styles */
+        .recipe-meta {
+            margin-bottom: 1rem;
+        }
+
+        .recipe-meta p {
+            margin: 0.5rem 0;
+        }
+
+        .ingredients-section, .preparation-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .ingredients-section h4, .preparation-section h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Chart Styles */
+        .chart-container {
+            position: relative;
+        }
+
+        .chart-image.loading {
+            background: #eee;
+        }
+
+        .chart-image.loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--primary-color);
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Button Styles */
+        .btn-view, .btn-view-all {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .btn-view:hover, .btn-view-all:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+    </style>
+{% endblock %}

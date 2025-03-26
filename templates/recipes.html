@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block title %}Receptes{% endblock %}
+{% block content %}
+    <!-- Main heading -->
+    <h1 class="page-title">Receptes</h1>
+
+    <!-- Search Filter Section -->
+    <section class="filters" aria-labelledby="filters-title">
+        <h2 class="sr-only" id="filters-title">Recepšu filtrēšana</h2>
+        <form class="filter-group" action="{{ url_for('search') }}" method="GET" role="search">
+            <label for="search">Meklēt:</label>
+            <div class="search-wrapper">
+                <input 
+                    type="text" 
+                    id="search" 
+                    name="q" 
+                    placeholder="Ievadiet receptes nosaukumu vai sastāvdaļu..." 
+                    aria-describedby="search-instructions"
+                >
+                <button type="button" class="clear-search" aria-label="Notīrīt meklēšanu" style="display: none;">✕</button>
+            </div>
+            <button type="submit" class="btn-search">Meklēt</button>
+            <p id="search-instructions" class="sr-only">Ievadiet receptes nosaukumu vai sastāvdaļas, lai filtrētu receptes.</p>
+        </form>
+    </section>
+
+    <!-- Recipe Grid Section -->
+    <section class="recipe-grid-section" aria-labelledby="recipes-title">
+        <h2 class="sr-only" id="recipes-title">Recepšu saraksts</h2>
+        {% if recipes %}
+            <div class="recipe-grid" id="recipe-grid">
+                {% for recipe in recipes %}
+                    <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                        <img 
+                            src="/static/recipes/{{ recipe['Nosaukums']|lower|replace(' ', '-') }}.jpg" 
+                            alt="Attēls no {{ recipe['Nosaukums'] }}" 
+                            class="recipe-image"
+                            loading="lazy"
+                            onerror="this.src='/static/placeholder.jpg'"
+                            itemprop="image"
+                        >
+                        <div class="recipe-details">
+                            <h3 class="recipe-title" itemprop="name">{{ recipe['Nosaukums'] }}</h3>
+                            <p class="recipe-ingredients" itemprop="recipeIngredient">{{ recipe['Sastāvdaļas'] }}</p>
+                            <a 
+                                href="/recipe/{{ recipe['Nosaukums']|lower|replace(' ', '-') }}" 
+                                class="btn-view" 
+                                itemprop="url"
+                            >Skatīt recepti</a>
+                            <meta itemprop="description" content="A recipe for {{ recipe['Nosaukums'] }}.">
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="no-results">Pašlaik nav pieejamu recepšu.</p>
+        {% endif %}
+    </section>
+
+    <style>
+        /* Filter Section Styles */
+        .filters {
+            margin-bottom: 2rem;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-group label {
+            font-weight: 500;
+            color: var(--accent-color);
+        }
+
+        .search-wrapper {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .filter-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+
+        .clear-search {
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .btn-search {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-search:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* No Results Message */
+        .no-results {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search');
+            const clearButton = document.querySelector('.clear-search');
+
+            // Show/hide clear button based on input value
+            searchInput.addEventListener('input', () => {
+                clearButton.style.display = searchInput.value ? 'block' : 'none';
+            });
+
+            // Clear search input
+            clearButton.addEventListener('click', () => {
+                searchInput.value = '';
+                clearButton.style.display = 'none';
+                searchInput.focus();
+            });
+        });
+    </script>
+{% endblock %}

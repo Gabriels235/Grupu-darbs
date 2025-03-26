@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Par Mums{% endblock %}
+{% block content %}
+    <h1 class="page-title">Par Mums</h1>
+
+    <section class="about-section" aria-labelledby="about-title">
+        <h2 class="sr-only" id="about-title">Par Latvijas Receptes</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/static/placeholder.jpg" alt="Attēls par latviešu virtuvi" loading="lazy">
+            </div>
+            <div class="about-text">
+                <p>Mēs esam kaislīgi ēdiena mīļotāji, kas vēlas dalīties ar labākajām latviešu receptēm. Mūsu mērķis ir padarīt gatavošanu vienkāršu un patīkamu ikvienam!</p>
+                {% for fact in facts %}
+                    <p class="fact-highlight">{{ fact }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

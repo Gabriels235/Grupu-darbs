@@ -1,0 +1,589 @@
+2025-03-25 22:40:02,942 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:40:02,945 - __main__ - ERROR - Error initializing RecipeManager: No columns to parse from file
+2025-03-25 22:40:02,950 - __main__ - WARNING - No ingredients to chart
+2025-03-25 22:40:02,951 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:40:02,972 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:40:02,972 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 22:40:02,974 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 22:40:03,901 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:40:03,904 - __main__ - ERROR - Error initializing RecipeManager: No columns to parse from file
+2025-03-25 22:40:03,909 - __main__ - WARNING - No ingredients to chart
+2025-03-25 22:40:03,910 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:40:03,922 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 22:40:03,924 - werkzeug - INFO -  * Debugger PIN: 283-464-523
+2025-03-25 22:40:19,901 - __main__ - WARNING - No recipes available in recipe_manager.df
+2025-03-25 22:40:19,964 - __main__ - ERROR - Failed to render 500.html: Encountered unknown tag 'now'.
+2025-03-25 22:40:19,964 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:40:19] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-25 22:42:46,875 - __main__ - ERROR - Error in recipes route: Encountered unknown tag 'now'.
+2025-03-25 22:42:46,878 - __main__ - ERROR - Failed to render 500.html: Encountered unknown tag 'now'.
+2025-03-25 22:42:46,879 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:42:46] "[35m[1mGET /recipes HTTP/1.1[0m" 500 -
+2025-03-25 22:46:19,450 - werkzeug - INFO -  * Detected change in 'C:\\Users\\gabri\\OneDrive\\Documents\\recipe_app\\hello.py', reloading
+2025-03-25 22:46:19,553 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 22:58:20,595 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:58:21,124 - __main__ - INFO - Chart regenerated at 2025-03-25 22:58:20.603387
+2025-03-25 22:58:21,125 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:58:21,146 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:58:21,146 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 22:58:21,148 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 22:58:22,064 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:58:22,477 - __main__ - INFO - Chart regenerated at 2025-03-25 22:58:22.072277
+2025-03-25 22:58:22,477 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:58:22,490 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 22:58:22,493 - werkzeug - INFO -  * Debugger PIN: 283-464-523
+2025-03-25 22:58:27,916 - __main__ - ERROR - Error in home route: 'RecipeManager' object has no attribute 'get_recipe_by_index'
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documents\recipe_app\hello.py", line 180, in home
+    featured_recipe = recipe_manager.get_recipe_by_index(0)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RecipeManager' object has no attribute 'get_recipe_by_index'
+2025-03-25 22:58:27,951 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:58:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-25 22:58:27,979 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:58:27] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:58:29,014 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:58:29] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:58:29,678 - __main__ - ERROR - Error in home route: 'RecipeManager' object has no attribute 'get_recipe_by_index'
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documents\recipe_app\hello.py", line 180, in home
+    featured_recipe = recipe_manager.get_recipe_by_index(0)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'RecipeManager' object has no attribute 'get_recipe_by_index'
+2025-03-25 22:58:29,680 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:58:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-03-25 22:58:29,693 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:58:29] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:59:05,675 - werkzeug - INFO -  * Detected change in 'C:\\Users\\gabri\\OneDrive\\Documents\\recipe_app\\hello.py', reloading
+2025-03-25 22:59:05,797 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 22:59:06,755 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:59:07,166 - __main__ - INFO - Chart regenerated at 2025-03-25 22:59:06.763500
+2025-03-25 22:59:07,167 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:59:07,180 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 22:59:07,182 - werkzeug - INFO -  * Debugger PIN: 283-464-523
+2025-03-25 22:59:12,337 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:59:12,769 - __main__ - INFO - Chart regenerated at 2025-03-25 22:59:12.362179
+2025-03-25 22:59:12,769 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:59:12,792 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 22:59:12,792 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 22:59:12,793 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 22:59:13,758 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 22:59:14,172 - __main__ - INFO - Chart regenerated at 2025-03-25 22:59:13.766110
+2025-03-25 22:59:14,172 - __main__ - INFO - Application initialized successfully
+2025-03-25 22:59:14,187 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 22:59:14,189 - werkzeug - INFO -  * Debugger PIN: 123-341-546
+2025-03-25 22:59:16,056 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "GET / HTTP/1.1" 200 -
+2025-03-25 22:59:16,083 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:59:16,393 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "GET /static/ingredients_chart.png HTTP/1.1" 200 -
+2025-03-25 22:59:16,394 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "GET /static/recipes/zupa.jpg HTTP/1.1" 200 -
+2025-03-25 22:59:16,962 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "GET /static/placeholder.jpg HTTP/1.1" 200 -
+2025-03-25 22:59:16,971 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:16] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,005 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,035 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,137 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,145 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,162 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,166 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,173 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,189 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,197 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,203 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,234 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,239 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,242 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,246 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,249 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,253 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,256 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,260 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,263 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,267 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,270 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,273 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,277 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,280 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,284 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,287 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,290 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,294 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,297 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,301 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,304 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,307 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,311 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,314 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,318 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,321 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,325 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,328 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,331 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,335 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,338 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,342 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,346 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,349 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,352 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,355 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,359 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,362 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,366 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,369 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,373 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,376 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,380 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,383 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,386 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,390 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,393 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,397 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,400 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,403 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,407 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,412 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,415 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,418 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,421 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,425 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,428 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,431 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,435 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,438 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,442 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,445 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,449 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,452 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,455 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,459 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,462 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,466 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,469 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,472 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,476 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,480 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,483 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,486 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,489 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,493 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,497 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,500 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,503 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,506 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,510 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,513 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,517 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,520 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,524 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,528 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,531 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,535 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,538 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,542 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,546 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,549 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,552 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,556 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,559 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,563 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,566 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,569 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,573 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,577 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,580 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,584 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,587 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,590 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,594 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,598 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,601 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,604 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,608 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,611 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,615 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,618 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,621 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,625 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,628 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,632 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,635 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,638 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,642 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,648 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,653 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,657 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,663 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,667 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,672 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,676 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,681 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,686 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,690 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,694 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,698 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,701 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,704 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,707 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,711 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,714 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,717 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,720 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,723 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,727 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,730 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,733 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,737 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,740 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,744 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,748 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,751 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,754 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,757 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,761 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,764 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,767 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,770 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,773 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,777 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,780 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,784 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,787 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,790 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,794 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,800 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,803 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,807 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,810 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,813 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,817 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:17,820 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:17] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:24,101 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:24] "GET /recipes HTTP/1.1" 200 -
+2025-03-25 22:59:24,122 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:24] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:59:24,264 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:24] "[36mGET /static/recipes/zupa.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:25,551 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:25] "GET /about HTTP/1.1" 200 -
+2025-03-25 22:59:25,569 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:25] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:59:29,588 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:29] "GET / HTTP/1.1" 200 -
+2025-03-25 22:59:29,603 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:29] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 22:59:29,693 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:29] "[36mGET /static/ingredients_chart.png HTTP/1.1[0m" 304 -
+2025-03-25 22:59:29,696 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:29] "[36mGET /static/recipes/zupa.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,549 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "GET /static/placeholder.jpg HTTP/1.1" 200 -
+2025-03-25 22:59:39,553 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,557 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,560 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,564 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,567 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,570 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,573 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,577 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,582 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,586 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,589 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,593 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,597 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,601 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,604 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,608 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,612 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,616 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,620 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,623 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,627 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,631 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,634 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,637 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,641 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,644 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,648 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,651 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,654 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,657 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,661 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,664 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,668 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,671 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,674 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,678 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,682 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,685 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,687 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,693 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,697 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,700 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,704 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,708 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,736 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,740 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,746 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,750 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,755 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,760 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,765 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,770 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,775 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,779 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,784 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,788 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,792 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,801 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,805 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,809 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,812 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,816 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,820 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,826 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,832 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,836 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,840 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,844 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,847 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,850 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,853 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,856 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,860 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,863 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,866 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,869 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,872 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,874 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,878 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,881 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,883 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,886 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,889 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,893 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,896 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,899 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,902 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,905 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,908 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,912 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,915 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,919 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,922 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,925 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,928 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,931 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,934 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,937 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,940 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,943 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,946 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,949 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,952 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 22:59:39,956 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 22:59:39] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:00,990 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 23:01:01,402 - __main__ - INFO - Chart regenerated at 2025-03-25 23:01:00.998487
+2025-03-25 23:01:01,402 - __main__ - INFO - Application initialized successfully
+2025-03-25 23:01:01,425 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 23:01:01,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 23:01:01,426 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 23:01:02,380 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 23:01:02,808 - __main__ - INFO - Chart regenerated at 2025-03-25 23:01:02.388269
+2025-03-25 23:01:02,809 - __main__ - INFO - Application initialized successfully
+2025-03-25 23:01:02,821 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 23:01:02,823 - werkzeug - INFO -  * Debugger PIN: 123-341-546
+2025-03-25 23:01:04,431 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:04] "GET / HTTP/1.1" 200 -
+2025-03-25 23:01:04,474 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:04] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:04,795 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:04] "GET /static/ingredients_chart.png HTTP/1.1" 200 -
+2025-03-25 23:01:04,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:04] "GET /static/recipes/zupa.jpg HTTP/1.1" 200 -
+2025-03-25 23:01:05,185 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,316 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,350 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,360 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,392 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,422 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,533 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,552 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,562 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,572 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,603 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,607 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,611 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,615 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,618 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,621 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,624 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,628 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,632 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,635 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,638 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,642 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,645 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,648 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,651 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,654 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,657 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,660 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,664 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,667 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,670 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,673 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,678 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,681 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,684 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,687 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,690 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,694 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,697 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,700 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,704 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,707 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,711 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,714 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,717 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,720 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,723 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,727 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,731 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,734 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,736 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,740 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,744 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,747 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,750 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,753 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,756 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,761 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,764 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,767 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,770 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,773 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,777 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,780 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,784 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,787 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,790 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,794 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,797 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,800 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,803 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,806 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,811 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,814 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,817 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,820 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,823 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,827 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,830 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,833 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,836 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,840 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,844 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,847 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,850 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,854 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:05,857 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:05] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:09,371 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:09] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:11,533 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:11] "GET /about HTTP/1.1" 200 -
+2025-03-25 23:01:11,552 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:11] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:16,811 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:16] "GET / HTTP/1.1" 200 -
+2025-03-25 23:01:16,830 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:16] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:16,916 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:16] "[36mGET /static/ingredients_chart.png HTTP/1.1[0m" 304 -
+2025-03-25 23:01:16,921 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:16] "[36mGET /static/recipes/zupa.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:30,153 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:30] "GET /static/placeholder.jpg HTTP/1.1" 200 -
+2025-03-25 23:01:49,301 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 23:01:49,709 - __main__ - INFO - Chart regenerated at 2025-03-25 23:01:49.309081
+2025-03-25 23:01:49,709 - __main__ - INFO - Application initialized successfully
+2025-03-25 23:01:49,731 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 23:01:49,732 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 23:01:49,733 - werkzeug - INFO -  * Restarting with stat
+2025-03-25 23:01:50,663 - __main__ - INFO - CSRF protection initialized successfully
+2025-03-25 23:01:51,062 - __main__ - INFO - Chart regenerated at 2025-03-25 23:01:50.670934
+2025-03-25 23:01:51,062 - __main__ - INFO - Application initialized successfully
+2025-03-25 23:01:51,073 - werkzeug - WARNING -  * Debugger is active!
+2025-03-25 23:01:51,075 - werkzeug - INFO -  * Debugger PIN: 123-341-546
+2025-03-25 23:01:52,931 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:52] "GET / HTTP/1.1" 200 -
+2025-03-25 23:01:52,970 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:52] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:53,322 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/recipes/zupa.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,324 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/ingredients_chart.png HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,718 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,849 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,883 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,894 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,898 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,931 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:53,953 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:53] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,028 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,077 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,083 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,100 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,117 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,123 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,161 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,174 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,178 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,181 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,184 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,187 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,190 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,193 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,197 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,200 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,203 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,206 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,209 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,212 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,215 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,218 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,221 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,224 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,228 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,231 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,234 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,236 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,239 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,243 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,247 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,250 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,253 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,256 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,260 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,263 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,266 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,269 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,272 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,276 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,280 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,283 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,286 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,289 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,293 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,297 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,300 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,303 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,306 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,310 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,314 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,317 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,320 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,323 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,329 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,332 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,335 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,338 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,342 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,346 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,349 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,352 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,354 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,358 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,362 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,365 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,368 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,371 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,374 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,379 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,382 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,385 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,388 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,392 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,396 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,399 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,402 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,405 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,408 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:54,412 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:54] "[36mGET /static/placeholder.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:01:55,100 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:55] "GET /recipes HTTP/1.1" 200 -
+2025-03-25 23:01:55,118 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:55] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:01:55,245 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:01:55] "[36mGET /static/recipes/zupa.jpg HTTP/1.1[0m" 304 -
+2025-03-25 23:02:07,732 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:02:07] "GET /about HTTP/1.1" 200 -
+2025-03-25 23:02:07,751 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:02:07] "[33mGET /static/favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 23:02:15,287 - werkzeug - INFO - 127.0.0.1 - - [25/Mar/2025 23:02:15] "GET /static/placeholder.jpg HTTP/1.1" 200 -

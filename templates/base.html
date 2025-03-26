@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latvijas Receptes - vienkāršas un gardas receptes ikvienam">
+    <meta name="author" content="Latvijas Receptes">
+    <meta name="robots" content="index, follow">
+    <title>{% block title %}Receptes{% endblock %} - Latvijas Receptes</title>
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" media="print" onload="this.media='all'">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/static/favicon.ico" as="image">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+    <!-- CSRF token for forms -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <style>
+        :root {
+            --primary-color: #f8b400;
+            --secondary-color: #ff9642;
+            --accent-color: #5c3c10;
+            --text-color: #333333;
+            --background-color: #f9f9f9;
+            --card-background: #ffffff;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+            --line-height: 1.5;
+        }
+
+        /* Reset and base styles */
+        *, *:before, *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: var(--line-height);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .nav-links a.active {
+            background-color: var(--accent-color);
+        }
+
+        /* Hamburger menu for mobile */
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Theme toggle */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* Content Styles */
+        main {
+            min-height: calc(100vh - 160px);
+            padding: 30px 0;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* About Page */
+        .about-section {
+            padding: 20px 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .about-content {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .about-image, .about-text {
+                flex: 1;
+            }
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .about-text {
+            background-color: var(--card-background);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .fact-highlight {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* Recipe Cards */
+        .recipe-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: transform var(--transition);
+            height: 100%;
+            position: relative;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-image.loading {
+            background: #eee;
+        }
+
+        .recipe-image.loading::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            border: 3px solid var(--primary-color);
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .recipe-details {
+            padding: 20px;
+        }
+
+        .recipe-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+
+        .recipe-ingredients {
+            color: #666;
+            margin-bottom: 15px;
+            /* Modern line-clamp for text truncation */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3; /* Vendor-specific property for WebKit browsers */
+            line-clamp: 3; /* Standard property (future-proof) */
+            overflow: hidden;
+            /* Fallback for unsupported browsers */
+            max-height: calc(var(--line-height) * 3em);
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Featured Recipe */
+        .featured-recipe {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: var(--box-shadow);
+        }
+
+        .featured-title {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .chart-container {
+            margin-top: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .chart-container img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Dark Mode Support */
+        body.dark-mode {
+            --background-color: #1a1a1a;
+            --card-background: #2a2a2a;
+            --text-color: #e0e0e0;
+            --accent-color: #f8b400;
+        }
+
+        body.dark-mode header {
+            background-color: #2a2a2a;
+        }
+
+        body.dark-mode .recipe-ingredients {
+            color: #b0b0b0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .featured-recipe {
+                padding: 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="sr-only">Pāriet uz galveno saturu</a>
+
+    <header>
+        <nav class="navbar" aria-label="Galvenā navigācija">
+            <div class="container nav-container">
+                <a href="/" class="logo">Latvijas Receptes</a>
+                <div class="nav-controls">
+                    <button class="theme-toggle" aria-label="Pārslēgt tēmu">🌙</button>
+                    <button class="hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Atvērt izvēlni">
+                        ☰
+                    </button>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <a href="/" class="{{ 'active' if request.path == '/' else '' }}" aria-current="{{ 'page' if request.path == '/' else 'false' }}">Sākums</a>
+                    <a href="/recipes" class="{{ 'active' if request.path == '/recipes' else '' }}" aria-current="{{ 'page' if request.path == '/recipes' else 'false' }}">Receptes</a>
+                    <a href="/about" class="{{ 'active' if request.path == '/about' else '' }}" aria-current="{{ 'page' if request.path == '/about' else 'false' }}">Par Mums</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer aria-label="Kājene">
+        <div class="container footer-container">
+            <nav class="footer-links" aria-label="Kājenes navigācija">
+                <a href="/">Sākums</a>
+                <a href="/recipes">Receptes</a>
+                <a href="/about">Par Mums</a>
+            </nav>
+            <div class="copyright">
+                © 2025 Latvijas Receptes. Visas tiesības aizsargātas.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for hamburger menu and theme toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hamburger menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            hamburger.addEventListener('click', () => {
+                const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+                hamburger.setAttribute('aria-expanded', !isExpanded);
+                navLinks.classList.toggle('active');
+                hamburger.textContent = isExpanded ? '☰' : '✕';
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.textContent = '☰';
+                });
+            });
+
+            // Theme toggle functionality
+            const themeToggle = document.querySelector('.theme-toggle');
+            const body = document.body;
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            
+            if (currentTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeToggle.textContent = '☀️';
+            }
+
+            themeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                const isDarkMode = body.classList.contains('dark-mode');
+                themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
+                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+            });
+
+            // Add loading class to images
+            document.querySelectorAll('.recipe-image').forEach(img => {
+                img.classList.add('loading');
+                img.onload = () => img.classList.remove('loading');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% block title %}{{ recipe['Nosaukums'] }} - Receptes{% endblock %}
+{% block content %}
+    <!-- Recipe Detail Section -->
+    <section class="recipe-detail" aria-labelledby="recipe-title">
+        <h1 class="page-title" id="recipe-title">{{ recipe['Nosaukums'] }}</h1>
+
+        {% if recipe %}
+            <article class="recipe-card" itemscope itemtype="https://schema.org/Recipe">
+                <img 
+                    src="/static/recipes/{{ recipe['Nosaukums']|lower|replace(' ', '-') }}.jpg" 
+                    alt="Attēls no {{ recipe['Nosaukums'] }}" 
+                    class="recipe-image"
+                    loading="lazy"
+                    onerror="this.src='/static/placeholder.jpg'"
+                    itemprop="image"
+                >
+                <div class="recipe-details">
+                    <div class="recipe-meta">
+                        <p><strong>Sagatavošanas laiks:</strong> <time itemprop="prepTime" datetime="PT30M">30 minūtes</time></p>
+                        <p><strong>Porciju skaits:</strong> <span itemprop="recipeYield">4</span></p>
+                    </div>
+                    <div class="recipe-content">
+                        <div class="ingredients-section">
+                            <h2>Sastāvdaļas:</h2>
+                            <p itemprop="recipeIngredient">{{ recipe['Sastāvdaļas'] }}</p>
+                        </div>
+                        <div class="preparation-section">
+                            <h2>Pagatavošana:</h2>
+                            <p itemprop="recipeInstructions">{{ recipe['Pagatavošana'] }}</p>
+                        </div>
+                    </div>
+                    <meta itemprop="datePublished" content="2025-03-25">
+                    <meta itemprop="description" content="A delicious recipe for {{ recipe['Nosaukums'] }}.">
+                </div>
+            </article>
+        {% else %}
+            <p class="no-results">Recepte nav atrasta.</p>
+        {% endif %}
+
+        <div class="back-link">
+            <a href="{{ url_for('recipes') }}" class="btn-back">Atgriezties pie receptēm</a>
+        </div>
+    </section>
+
+    <style>
+        .recipe-detail {
+            padding: 2rem 0;
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .recipe-meta {
+            margin: 1.5rem 0;
+        }
+
+        .recipe-meta p {
+            margin: 0.5rem 0;
+        }
+
+        .ingredients-section, .preparation-section {
+            margin-bottom: 2rem;
+        }
+
+        .ingredients-section h2, .preparation-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .btn-back {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .btn-back:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .no-results {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin: 2rem 0;
+        }
+    </style>
+{% endblock %}
